@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+
+<title>كوافير قمرين  </title>
+
+<div class="hero-image">
+  <img src="images/banner.jpg" alt="كوافير قمرين">
+  
+</div>
+<link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+<div class="navbar">
+  <div class="logo">
+  <img src="images/logo.png" alt="كوافير قمرين">
+  <span>كوافير قمرين شرباص</span>
+</div>
+  <div class="links">
+    <a href="index.html">الرئيسية</a>
+    <a href="gallery.html">الصور</a>
+    <a href="videos.html">الفيديوهات</a>
+    <a href="products.html">المنتجات</a>
+  </div>
+</div>
+<h1 class="title">كوافير قمرين </h1>
+<p class="desc">ميكب أرتست – بروتين وفيلر وعلاج الشعر</p>
+<h2 class="section-title">خدماتنا</h2>
+
+<!-- خدمات الشعر -->
+<h3 class="sub-title hair-title">خدمات الشعر</h3>
+<div class="services hair">
+  <div class="service">بروتين شعر</div>
+  <div class="service">فيلر شعر</div>
+  <div class="service">علاج وتساقط الشعر</div>
+  
+</div>
+
+<div class="divider"></div>
+
+<!-- خدمات البشرة -->
+<h3 class="sub-title skin-title">خدمات البشرة</h3>
+<div class="services skin">
+  <div class="service">تنظيف بشرة عميق</div>
+  <div class="service">تقشير وتفتيح البشرة</div>
+  <div class="service">ترطيب ونضارة البشرة</div>
+  <div class="service">ماسكات وعلاج الحبوب</div>
+  <div class="service">ميكب احترافي</div>
+</div>
+</div>
+<h2 class="section-title"> بعد/ قبل </h2>
+<div class="ba-slider">
+  <div class="ba-item active">
+    <img src="images/before1.jpg">
+    <img src="images/after1.jpg">
+  </div>
+
+  <div class="ba-item">
+    <img src="images/before2.jpg">
+    <img src="images/after2.jpg">
+  </div>
+
+  <div class="ba-item">
+    <img src="images/before3.jpg">
+    <img src="images/after3.jpg">
+  </div>
+</div>
+
+<div class="before-after">
+  <div>
+   
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const items = document.querySelectorAll(".ba-item");
+    let index = 0;
+
+    setInterval(() => {
+      items[index].classList.remove("active");
+      index = (index + 1) % items.length;
+      items[index].classList.add("active");
+    }, 2000);
+  });
+</script>
+
+    <p>قبل</p>
+    <!-- <img src="images/before1.jpg"> -->
+    <!-- <img src="images/before2.jpg"> -->
+  </div>
+  <div>
+    
+    
+    <p>بعد</p>
+    <!-- <img src="images/after1.jpg"> -->
+     <!-- <img src="images/after2.jpg"> -->
+  </div>
+</div>
+<a href="gallery.html">معرض الصور</a> |
+<a href="videos.html">الفيديوهات</a>
+<a href="https://wa.me/201212967119" class="whatsapp" target="_blank">
+  💬 احجز على واتساب
+</a>
+<a href="products.html">المنتجات</a>
+</body>
+</html>
